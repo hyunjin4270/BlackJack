@@ -1,4 +1,3 @@
-package blackjack;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -6,7 +5,7 @@ import java.util.Scanner;
 class Card {
     private static int[][] card = new int[4][13];
 
-    //Ä«µå¼¼ÆÃ
+    //ì¹´ë“œì„¸íŒ…
     static void shuffle() {
         for (int i = 0; i < 3; i++) {
 
@@ -19,7 +18,7 @@ class Card {
 
     }
 
-    //¹«½¼Á¾·ùÄ«µåÀÎÁö ÆÇº°
+    //ë¬´ìŠ¨ì¢…ë¥˜ì¹´ë“œì¸ì§€ íŒë³„
     static String whatCard(int a) {
 
         return switch (a) {
@@ -33,7 +32,7 @@ class Card {
     }
 
 
-    //¾î´ÀÁ¤µµ ¼ýÀÚÀÎÁö ÆÇº°
+    //ì–´ëŠì •ë„ ìˆ«ìžì¸ì§€ íŒë³„
     static String whatCardNum(int a) {
 
         return switch (a) {
@@ -55,13 +54,13 @@ class Card {
 
     }
 
-    //À§ µÎ°¡Áö ÆÇº°°ªÀ» Á¶ÇÕ
+    //ìœ„ ë‘ê°€ì§€ íŒë³„ê°’ì„ ì¡°í•©
     static String completedCard(String a, String b) {
         return a + " " + b;
 
     }
 
-    //Ä«µå µå·Î¿ì(¼­ºêÅ¬·¡½ºÀü¿ë)
+    //ì¹´ë“œ ë“œë¡œìš°(ì„œë¸Œí´ëž˜ìŠ¤ì „ìš©)
     static int[] draw() {
         Random random = new Random();
 
@@ -80,7 +79,7 @@ class Card {
 
     }
 
-    //ÇÃ·¹ÀÌ¾î Á¡¼ö°è»ê
+    //í”Œë ˆì´ì–´ ì ìˆ˜ê³„ì‚°
     static int sumScore(int players, int card) throws InterruptedException  {
         @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
@@ -145,7 +144,7 @@ class Card {
 
     }
 
-    //º¸À¯ Ä«µåÃâ·Â
+    //ë³´ìœ  ì¹´ë“œì¶œë ¥
     static void showCard(int players) {
         System.out.println();
 

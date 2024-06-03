@@ -1,4 +1,3 @@
-package blackjack;
 
 class Dealer {
     static int cardSum = 0;

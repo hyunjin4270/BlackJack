@@ -1,4 +1,3 @@
-package blackjack;
 
 class Player {
     static int[] cardSum;
